@@ -3,19 +3,33 @@
 @tailwind utilities;
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+  --font-bodoni-moda: sans-serif;
+  --background: #fff;
+  --foreground: #252525;
+  --header-background: #f0f1f2; 
+  --header-foreground: #3c4043;
+  --header-hover-background: #e1e3e5; 
+  --header-hover-foreground: #3c4043;
+  --border: #e0e0e0;
+  --hero-car-image: url('/images/hero/light-hero-car.png');
+  --sidebar-background: #d2deea56; 
+  --sidebar-foreground: #252525;
+  --sidebar-hover-background: #d2deeaa4;
+  --project-background: #fbfbfb; 
+  --text-light: #e0e0e0; 
+  --text-dark: #3c4043;
 }
 
 body {
   color: var(--foreground);
   background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-bodoni-moda);
+}
+
+h1, h2, p, a {
+  color: var(--foreground);
+}
+
+a:hover {
+  color: var(--foreground);
 }
