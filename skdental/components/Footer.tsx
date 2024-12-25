@@ -3,7 +3,7 @@ import { FaPhoneAlt, FaEnvelope, FaClock, FaMapMarkerAlt } from "react-icons/fa"
 
 export default function Footer() {
   return (
-    <footer id="contact-us" className="bg-[var(--sidebar-background)] text-[var(--sidebar-foreground)] py-8">
+    <footer id="contact-us" className="mt-16 bg-[var(--sidebar-background)] text-[var(--sidebar-foreground)] py-8">
       <div className="container mx-auto px-4 grid grid-cols-1 md:grid-cols-2 gap-8">
         {/* Left Section: Address and Google Maps */}
         <div>

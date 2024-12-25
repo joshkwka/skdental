@@ -12,7 +12,8 @@
   --header-hover-foreground: #3c4043;
   --border: #e0e0e0;
   --hero-car-image: url('/images/hero/light-hero-car.png');
-  --sidebar-background: #d2deea56; 
+  --sidebar-background: #d2deeae6; 
+  --header-background: #d2deea56;
   --sidebar-foreground: #252525;
   --sidebar-hover-background: #d2deeaa4;
   --project-background: #fbfbfb; 
