@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 :root {
-  --font-bodoni-moda: sans-serif;
+  --font-poppins: 'Poppins', sans-serif;
   --background: #fff;
   --foreground: #252525;
   --header-background: #f0f1f2; 
@@ -24,7 +24,7 @@
 body {
   color: var(--foreground);
   background: var(--background);
-  font-family: var(--font-bodoni-moda);
+  font-family: var(--font-poppins);
 }
 
 h1, h2, p, a {

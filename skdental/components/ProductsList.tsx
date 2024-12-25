@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 
 const ProductsList = () => {
-  const [expandedSection, setExpandedSection] = useState<string | null>(null);
+  const [expandedSection, setExpandedSection] = useState<string | null>("Crown & Bridge");
 
   const toggleSection = (section: string) => {
     setExpandedSection(expandedSection === section ? null : section);

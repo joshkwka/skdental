@@ -1,10 +1,10 @@
 import "@/app/globals.css";
-import { Bodoni_Moda } from "next/font/google";
+import { Poppins } from "next/font/google";
 
-const bodoniModa = Bodoni_Moda({
+const poppins = Poppins({
   subsets: ["latin"],
   weight: ["400", "700"],
-  variable: "--font-bodoni-moda",
+  variable: "--font-poppins",
 });
 
 export default function RootLayout({
@@ -13,7 +13,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={bodoniModa.variable}>
+    <html lang="en" className={poppins.variable}>
       <head>
         <link rel="icon" href="/images/favicon/favicon.ico" />
         <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon/favicon-32x32.png" />
@@ -25,15 +25,15 @@ export default function RootLayout({
           content="SK Dental... a custom etc etc business" //ADD DESCRIPTION HERE
         />
         <meta property="og:image" content="/images/projects/portfolio.png" />
-        <meta property="og:url" content="https://www.joshkwak.com" />
+        <meta property="og:url" content="https://www.skdental.com" />
         <meta property="og:type" content="website" />
         <title>SK Dental</title> 
         <meta
           name="description"
-          content="SK Dental... a cusotm etc etc business" //ADD DESCRIPTION HERE
+          content="SK Dental... a custom etc etc business" //ADD DESCRIPTION HERE
         />
       </head>
-      <body className="font-serif">{children}</body>
+      <body className="font-sans">{children}</body>
     </html>
   );
 }
