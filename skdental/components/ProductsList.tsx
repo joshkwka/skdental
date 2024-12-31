@@ -19,7 +19,7 @@ const ProductsList = () => {
   };
 
   return (
-    <section id="products" className="mt-24 my-8 py-4 px-4 bg-gray-50 rounded-lg shadow-md">
+    <section id="products" className="mt-24 my-8 py-4 px-4 bg-[var(--product-background)] rounded-lg shadow-md">
       <div className="space-y-4">
         <h2 className="text-2xl xs:text-3xl font-bold mb-6 text-center text-gray-800">
           Our Products
@@ -103,7 +103,7 @@ const ProductsList = () => {
         >
           <div className="rounded-3xl overflow-hidden">
             <Image
-              src="/images/products/implant.png"
+              src="/images/products/implant.jpg"
               alt="Implants"
               width={300}
               height={200}

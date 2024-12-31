@@ -2,7 +2,7 @@ import { FaDownload } from "react-icons/fa";
 
 const Order = () => {
   return (
-    <section id="order" className="mt-24 my-8 py-8 px-6 bg-gray-100 rounded-lg shadow-md">
+    <section id="order" className="mt-24 my-8 py-8 px-6 bg-[var(--product-background)] rounded-lg shadow-md">
       <div className="space-y-4">
         <h2 className="text-2xl xs:text-3xl font-bold mb-6 text-center text-gray-800">
           Order from S K Dental

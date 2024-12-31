@@ -10,11 +10,11 @@ const About = () => {
       {/* Background Image */}
       <div className="absolute inset-0 z-10">
         <Image
-          src="/images/about/model.jpg"
+          src="/images/about/about.png"
           alt="Model"
           layout="fill"
           objectFit="cover"
-          className="opacity-40"
+          className="opacity-30 bg-[var(--about-background)]"
         />
       </div>
 

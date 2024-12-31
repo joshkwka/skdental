@@ -4,7 +4,8 @@
 
 :root {
   --font-poppins: 'Poppins', sans-serif;
-  --background: #fff;
+  --background: #e8e3e122;
+  --product-background: #ebebeb56;
   --foreground: #252525;
   --header-background: #f0f1f2; 
   --header-foreground: #3c4043;
