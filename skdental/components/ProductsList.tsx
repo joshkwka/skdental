@@ -103,7 +103,7 @@ const ProductsList = () => {
         >
           <div className="rounded-3xl overflow-hidden">
             <Image
-              src="/images/products/crown-bridge.jpg"
+              src="/images/products/implant.png"
               alt="Implants"
               width={300}
               height={200}
@@ -141,7 +141,7 @@ const ProductsList = () => {
         >
           <div className="rounded-3xl overflow-hidden">
             <Image
-              src="/images/products/crown-bridge.jpg"
+              src="/images/products/night-guard.jpg"
               alt="Night Guard"
               width={300}
               height={200}
