@@ -30,7 +30,7 @@ export default function RootLayout({
         <title>SK Dental</title> 
         <meta
           name="description"
-          content="SK Dental Ceramic Studio specializes in crafting Crowns & Bridges, Implants, and Night Guards"
+          content="SK Dental Ceramic Studio specializes in crafting high-quality cosmetic dental appliances, such as: Crowns & Bridges, Implants, and Night Guards"
         />
       </head>
       <body className="font-sans">{children}</body>
