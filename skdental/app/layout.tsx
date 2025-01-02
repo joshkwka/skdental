@@ -24,7 +24,7 @@ export default function RootLayout({
           property="og:description"
           content="SK Dental Ceramic Studio specializes in crafting Crowns & Bridges, Implants, and Night Guards"
         />
-        <meta property="og:image" content="/images/about/model.png" />
+        <meta property="og:image" content="/images/about/model.jpg" />
         <meta property="og:url" content="https://www.skdentalceramic.com" />
         <meta property="og:type" content="website" />
         <title>SK Dental</title> 
