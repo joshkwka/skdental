@@ -19,18 +19,18 @@ export default function RootLayout({
         <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon/favicon-32x32.png" />
         <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon/favicon-16x16.png" />
         <link rel="apple-touch-icon" href="/images/favicon/apple-touch-icon.png" />
-        <meta property="og:title" content="SK Dental..." /> 
+        <meta property="og:title" content="SK Dental Ceramic Studio" /> 
         <meta
           property="og:description"
-          content="SK Dental... a custom etc etc business" //ADD DESCRIPTION HERE
+          content="SK Dental Ceramic Studio specializes in crafting Crowns & Bridges, Implants, and Night Guards"
         />
-        <meta property="og:image" content="/images/projects/portfolio.png" />
-        <meta property="og:url" content="https://www.skdental.com" />
+        <meta property="og:image" content="/images/about/model.png" />
+        <meta property="og:url" content="https://www.skdentalceramic.com" />
         <meta property="og:type" content="website" />
         <title>SK Dental</title> 
         <meta
           name="description"
-          content="SK Dental... a custom etc etc business" //ADD DESCRIPTION HERE
+          content="SK Dental Ceramic Studio specializes in crafting Crowns & Bridges, Implants, and Night Guards"
         />
       </head>
       <body className="font-sans">{children}</body>
