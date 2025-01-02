@@ -25,16 +25,21 @@ const ProductsList = () => {
           Our Products
         </h2>
       </div>
+      <p className="mb-6 text-gray-700 text-center max-w-3xl mx-auto text-lg">
+      Every product we craft is tailored to meet the unique specifications of each dentist, ensuring the highest level of precision and satisfaction for you and your patients.
+      </p>
 
       {/* Crown & Bridge */}
-      <div className="mb-6 flex items-start">
-        <div className="flex-1">
-          <h3
-            className="text-xl font-semibold cursor-pointer text-gray-700 hover:text-blue-500 transition-colors"
-            onClick={() => toggleSection("Crown & Bridge")}
-          >
-            Crown & Bridge
-          </h3>
+      <div className="ml-0 lg:ml-20 mb-6 flex flex-wrap">
+      {/* Left Container */}
+      <div className="w-full md:w-1/2 flex flex-col items-start">
+        <h3
+          className="text-xl font-semibold cursor-pointer text-gray-700 hover:text-blue-500 transition-colors mb-4"
+          onClick={() => toggleSection("Crown & Bridge")}
+        >
+          Crown & Bridge
+        </h3>
+        <div className="flex flex-col">
           <div
             className={`transition-all duration-300 ease-in-out overflow-hidden ${
               expandedSection === "Crown & Bridge" ? "max-h-screen opacity-100" : "max-h-0 opacity-0"
@@ -56,12 +61,15 @@ const ProductsList = () => {
             </ul>
           </div>
         </div>
+      </div>
+
+        {/* Right Container */}
         <div
-          className={`transition-all duration-300 ease-in-out transform ${
+          className={`w-full md:w-1/2 flex justify-center items-center transition-all duration-300 ease-in-out transform ${
             expandedSection === "Crown & Bridge"
               ? "scale-100 opacity-100 max-h-screen"
               : "scale-90 opacity-0 max-h-0"
-          } max-w-xs ml-4 rounded-3xl overflow-hidden`}
+          }`}
         >
           <div className="rounded-3xl overflow-hidden">
             <Image
@@ -75,31 +83,36 @@ const ProductsList = () => {
       </div>
 
       {/* Implants */}
-      <div className="mb-6 flex items-start">
-        <div className="flex-1">
+      <div className="ml-0 lg:ml-20 mb-6 flex flex-wrap">
+        {/* Left Container */}
+        <div className="w-full md:w-1/2 flex flex-col items-start">
           <h3
-            className="text-xl font-semibold cursor-pointer text-gray-700 hover:text-blue-500 transition-colors"
+            className="text-xl font-semibold cursor-pointer text-gray-700 hover:text-blue-500 transition-colors mb-4"
             onClick={() => toggleSection("Implants")}
           >
             Implants
           </h3>
-          <div
-            className={`transition-all duration-300 ease-in-out overflow-hidden ${
-              expandedSection === "Implants" ? "max-h-screen opacity-100" : "max-h-0 opacity-0"
-            }`}
-          >
-            <p className="mt-2 text-gray-600">
-              SK Dental offers precision-crafted implants compatible with a wide range of systems. These implants are
-              designed for optimal osseointegration and durability, ensuring long-lasting performance.
-            </p>
+          <div className="flex flex-col">
+            <div
+              className={`transition-all duration-300 ease-in-out overflow-hidden ${
+                expandedSection === "Implants" ? "max-h-screen opacity-100" : "max-h-0 opacity-0"
+              }`}
+            >
+              <p className="mt-2 text-gray-600">
+                SK Dental offers precision-crafted implants compatible with a wide range of systems. These implants are
+                designed for optimal osseointegration and durability, ensuring long-lasting performance.
+              </p>
+            </div>
           </div>
         </div>
+
+        {/* Right Container */}
         <div
-          className={`transition-all duration-300 ease-in-out transform ${
+          className={`w-full md:w-1/2 flex justify-center items-center transition-all duration-300 ease-in-out transform ${
             expandedSection === "Implants"
               ? "scale-100 opacity-100 max-h-screen"
               : "scale-90 opacity-0 max-h-0"
-          } max-w-xs ml-4 rounded-3xl overflow-hidden`}
+          }`}
         >
           <div className="rounded-3xl overflow-hidden">
             <Image
@@ -113,31 +126,36 @@ const ProductsList = () => {
       </div>
 
       {/* Night Guard */}
-      <div className="mb-6 flex items-start">
-        <div className="flex-1">
+      <div className="ml-0 lg:ml-20 mb-6 flex flex-wrap">
+        {/* Left Container */}
+        <div className="w-full md:w-1/2 flex flex-col items-start">
           <h3
-            className="text-xl font-semibold cursor-pointer text-gray-700 hover:text-blue-500 transition-colors"
+            className="text-xl font-semibold cursor-pointer text-gray-700 hover:text-blue-500 transition-colors mb-4"
             onClick={() => toggleSection("Night Guard")}
           >
             Night Guard
           </h3>
-          <div
-            className={`transition-all duration-300 ease-in-out overflow-hidden ${
-              expandedSection === "Night Guard" ? "max-h-screen opacity-100" : "max-h-0 opacity-0"
-            }`}
-          >
-            <p className="mt-2 text-gray-600">
-              Our custom-fitted night guards provide effective protection against bruxism (teeth grinding) and ensure
-              comfort during use. Available in soft, hard, and hybrid materials to suit individual needs.
-            </p>
+          <div className="flex flex-col">
+            <div
+              className={`transition-all duration-300 ease-in-out overflow-hidden ${
+                expandedSection === "Night Guard" ? "max-h-screen opacity-100" : "max-h-0 opacity-0"
+              }`}
+            >
+              <p className="mt-2 text-gray-600">
+                Our custom-fitted night guards provide effective protection against bruxism (teeth grinding) and ensure
+                comfort during use. Available in soft, hard, and hybrid materials to suit individual needs.
+              </p>
+            </div>
           </div>
         </div>
+
+        {/* Right Container */}
         <div
-          className={`transition-all duration-300 ease-in-out transform ${
+          className={`w-full md:w-1/2 flex justify-center items-center transition-all duration-300 ease-in-out transform ${
             expandedSection === "Night Guard"
               ? "scale-100 opacity-100 max-h-screen"
               : "scale-90 opacity-0 max-h-0"
-          } max-w-xs ml-4 rounded-3xl overflow-hidden`}
+          }`}
         >
           <div className="rounded-3xl overflow-hidden">
             <Image
@@ -150,6 +168,7 @@ const ProductsList = () => {
         </div>
       </div>
     </section>
+
   );
 };
 

@@ -10,29 +10,52 @@ const DigitalCase = () => {
       <div className="p-4">
         <h3 className="text-xl font-bold mb-2">iTero® Digital Case Submission</h3>
         <p>1. Contact Align Technology directly to add S K Dental to your list of "Favorite Labs".</p>
-        <p>2. Provide S K Dental Lab ID as 000.</p>
-        <p>3. Under "Partner" search for S K Dental by entering skdentalceramic@gmail.com and request partnership.</p>
-        <p>4. Once partnership is approved, you can select S K Dental when completing the digital Rx.</p>
+        <p>2. Provide S K Dental's Lab ID as 104490.</p>
+        <p>3. In settings, select "Sync Configuration".</p>
+        <p>4. Submit your case and await confirmation.</p>
+        <p>5. Send your STL file to <a 
+              href="mailto:skdentalceramic@gmail.com" 
+              className="hover:underline"
+            >
+              skdentalceramic@gmail.com
+            </a>
+            .
+        </p> 
       </div>
     ),
     "3Shape TRIOS": (
       <div className="p-4">
         <h3 className="text-xl font-bold mb-2">3Shape TRIOS® Digital Case Submission</h3>
-        <p>1. Contact Align Technology directly to add S K Dental to your list of "Favorite Labs".</p>
-        <p>2. Provide S K Dental Lab ID as 000.</p>
-        <p>3. Under "Partner" search for S K Dental by entering skdentalceramic@gmail.com and request partnership.</p>
-        <p>4. Once partnership is approved, you can select S K Dental when completing the digital Rx.</p>
+        <p>1. Open your 3Shape software and log in to your account.</p>
+        <p>2. Select "Send to Lab".</p>
+        <p>3. Enter S K Dental Studio's email: skdentalceramic@gmail.com.</p>
+        <p>4. Submit and await confirmation.</p>
+        <p>5. Send your STL file to <a 
+              href="mailto:skdentalceramic@gmail.com" 
+              className="hover:underline"
+            >
+              skdentalceramic@gmail.com
+            </a>
+            .
+        </p> 
       </div>
     ),
     "Dentsply Sirona CEREC": (
       <div className="p-4">
         <h3 className="text-xl font-bold mb-2">Dentsply Sirona CEREC® Digital Case Submission</h3>
         <p>1. Open your Dentsply Sirona's "Connect Software".</p>
-        <p>2. Navigate to the "Case Submission" section and "Create New Case".</p>
-        <p>3. Scan your patient's case (if not already done).</p>
-        <p>4. Fill out patient details.</p>
-        <p>5. In the "Lab Selection" step, select S K Dental Studio as the lab.</p>
-        <p>6. Click "Submit" and await confirmation.</p>
+        <p>2. Navigate to the "Submit Scan" section.</p>
+        <p>3. Fill out patient details.</p>
+        <p>4. Enter S K Dental Studio's email: skdentalceramic@gmail.com.</p>
+        <p>5. Submit and await confirmation.</p>
+        <p>6. Send your STL file to <a 
+              href="mailto:skdentalceramic@gmail.com" 
+              className="hover:underline"
+            >
+              skdentalceramic@gmail.com
+            </a>
+            .
+        </p> 
       </div>
     ),
   };

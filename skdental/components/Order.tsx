@@ -1,4 +1,4 @@
-import { FaDownload } from "react-icons/fa";
+import RxForm from "./helper/RxForm";
 
 const Order = () => {
   return (
@@ -8,24 +8,18 @@ const Order = () => {
           Order from S K Dental
         </h2>
       </div>
-      <ol className="list-decimal list-inside text-lg text-gray-700 space-y-2">
-        <li>Call us at (604) 273-1163 to discuss your needs.</li>
-        <li>Confirm the product details and requirements.</li>
-        <li>
-          Print and complete the{" "}
-          <a
-            href="/rx-form.pdf"
-            download
-            className="inline-flex items-center text-blue-500 hover:underline"
-          >
-            
-            <span>Rx Form </span>
-            <FaDownload className="mr-2" />
-          </a>.
-        </li>
-        <li>Prepare any additional documentation or details.</li>
-        <li>Submit the order through email or in-person delivery.</li>
-      </ol>
+      <div className="flex justify-center">
+        <ol className="ml-0 lg:ml-20 items-left list-decimal list-inside text-lg text-gray-700 space-y-2">
+          <li>Call us at (604) 273-1163 to discuss your needs.</li>
+          <li>Confirm the product details and requirements.</li>
+          <li>
+            Print and complete the <RxForm />.
+          </li>
+          <li>Include the completed form along with your case.</li>
+          <li>Prepare any additional documentation or details.</li>
+          <li>Submit the order through email or in-person delivery.</li>
+        </ol>
+      </div>
     </section>
   );
 };

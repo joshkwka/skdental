@@ -13,9 +13,12 @@ export default function Footer() {
             </h3>
             <p>8171 Ackroyd Rd, #5055</p>
             <p>Richmond, BC, V6X 3K1</p>
+            {/* <p>8188 Manitoba St, #432</p>
+            <p>Vancouver, BC, V5X 3A2</p> */}
             <div className="mt-4">
                 <iframe
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2608.479276347307!2d-123.1346506!3d49.1724914!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x548675338e2781f3%3A0x1e856d15ce7561c9!2sS%20K%20Dental%20Ceramic%20Studio!5e0!3m2!1sen!2sca!4v1735160363822!5m2!1sen!2sca"
+                // src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2606.4396649855257!2d-123.1097671!3d49.21118839999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5486745897277739%3A0x50766da2da896f50!2s8188%20Manitoba%20St%20%23432%2C%20Vancouver%2C%20BC%20V5X%203A2!5e0!3m2!1sen!2sca!4v1735800827081!5m2!1sen!2sca"
                 width="100%"
                 height="200"
                 style={{ border: 0 }}
