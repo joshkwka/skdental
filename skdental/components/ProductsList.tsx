@@ -29,7 +29,7 @@ const ProductsList = () => {
       {/* Crown & Bridge */}
       <div className="ml-0 lg:ml-20 mb-6 flex flex-wrap">
       {/* Left Container */}
-      <div className="w-full md:w-1/2 flex flex-col items-start">
+      <div className="w-full md:w-1/2 flex flex-col items-start mb-6">
         <h3
           className="text-xl font-semibold cursor-pointer text-gray-700 hover:text-blue-500 transition-colors mb-4"
           onClick={() => toggleSection("Crown & Bridge")}
@@ -82,7 +82,7 @@ const ProductsList = () => {
       {/* Implants */}
       <div className="ml-0 lg:ml-20 mb-6 flex flex-wrap">
         {/* Left Container */}
-        <div className="w-full md:w-1/2 flex flex-col items-start">
+        <div className="w-full md:w-1/2 flex flex-col items-start mb-6">
           <h3
             className="text-xl font-semibold cursor-pointer text-gray-700 hover:text-blue-500 transition-colors mb-4"
             onClick={() => toggleSection("Implants")}
@@ -125,7 +125,7 @@ const ProductsList = () => {
       {/* Night Guard */}
       <div className="ml-0 lg:ml-20 mb-6 flex flex-wrap">
         {/* Left Container */}
-        <div className="w-full md:w-1/2 flex flex-col items-start">
+        <div className="w-full md:w-1/2 flex flex-col items-start mb-6">
           <h3
             className="text-xl font-semibold cursor-pointer text-gray-700 hover:text-blue-500 transition-colors mb-4"
             onClick={() => toggleSection("Night Guard")}
