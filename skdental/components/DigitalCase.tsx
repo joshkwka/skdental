@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import Image from "next/image";
 
 const DigitalCase = () => {
   type TabKey = "iTero" | "3Shape TRIOS" | "Dentsply Sirona CEREC";
@@ -9,9 +10,9 @@ const DigitalCase = () => {
     iTero: (
       <div className="p-4">
         <h3 className="text-xl font-bold mb-2">iTero® Digital Case Submission</h3>
-        <p>1. Contact Align Technology directly to add S K Dental to your list of "Favorite Labs".</p>
-        <p>2. Provide S K Dental's Lab ID as 104490.</p>
-        <p>3. In settings, select "Sync Configuration".</p>
+        <p>1. Contact Align Technology directly to add S K Dental to your list of &quot;Favorite Labs&quot;.</p>
+        <p>2. Provide S K Dental&apos;s Lab ID as 104490.</p>
+        <p>3. In settings, select &quot;Sync Configuration&quot;.</p>
         <p>4. Submit your case and await confirmation.</p>
         <p>5. Send your STL file to <a 
               href="mailto:skdentalceramic@gmail.com" 
@@ -27,8 +28,8 @@ const DigitalCase = () => {
       <div className="p-4">
         <h3 className="text-xl font-bold mb-2">3Shape TRIOS® Digital Case Submission</h3>
         <p>1. Open your 3Shape software and log in to your account.</p>
-        <p>2. Select "Send to Lab".</p>
-        <p>3. Enter S K Dental Studio's email: skdentalceramic@gmail.com.</p>
+        <p>2. Select &quot;Send to Lab&quot;.</p>
+        <p>3. Enter S K Dental Studio&apos;s email: skdentalceramic@gmail.com.</p>
         <p>4. Submit and await confirmation.</p>
         <p>5. Send your STL file to <a 
               href="mailto:skdentalceramic@gmail.com" 
@@ -43,10 +44,10 @@ const DigitalCase = () => {
     "Dentsply Sirona CEREC": (
       <div className="p-4">
         <h3 className="text-xl font-bold mb-2">Dentsply Sirona CEREC® Digital Case Submission</h3>
-        <p>1. Open your Dentsply Sirona's "Connect Software".</p>
-        <p>2. Navigate to the "Submit Scan" section.</p>
+        <p>1. Open your Dentsply Sirona&apos;s &quot;Connect Software&quot;.</p>
+        <p>2. Navigate to the &quot;Submit Scan&quot; section.</p>
         <p>3. Fill out patient details.</p>
-        <p>4. Enter S K Dental Studio's email: skdentalceramic@gmail.com.</p>
+        <p>4. Enter S K Dental Studio&apos;s email: skdentalceramic@gmail.com.</p>
         <p>5. Submit and await confirmation.</p>
         <p>6. Send your STL file to <a 
               href="mailto:skdentalceramic@gmail.com" 
@@ -60,11 +61,24 @@ const DigitalCase = () => {
     ),
   };
 
-  const images: Record<TabKey, string> = {
-    iTero: "/images/digitalcase/itero-261x533.png",
-    "3Shape TRIOS": "/images/digitalcase/3shape.avif",
-    "Dentsply Sirona CEREC": "/images/digitalcase/dentsplysirona.jpeg",
+  const images: Record<TabKey, { src: string; width: number; height: number }> = {
+    iTero: {
+      src: "/images/digitalcase/itero-261x533.png",
+      width: 261,
+      height: 533,
+    },
+    "3Shape TRIOS": {
+      src: "/images/digitalcase/3shape.avif",
+      width: 500,
+      height: 400,
+    },
+    "Dentsply Sirona CEREC": {
+      src: "/images/digitalcase/dentsplysirona.jpeg",
+      width: 500,
+      height: 400,
+    },
   };
+  
 
   return (
     <section id="digital-case" className="mt-24 my-8 py-8 px-4">
@@ -114,11 +128,13 @@ const DigitalCase = () => {
         <div className="flex-1">{instructions[activeTab]}</div>
 
         {/* Image Section */}
-        <div className="mt-4 sm:mt-0 sm:w-1/3">
-          <img
-            src={images[activeTab]}
+        <div className="mt-4 sm:mt-0 sm:w-1/3 flex justify-center items-center">
+          <Image
+            src={images[activeTab].src}
             alt={`${activeTab} Illustration`}
             className="rounded-lg shadow-md"
+            width={images[activeTab].width}
+            height={images[activeTab].height}
           />
         </div>
       </div>

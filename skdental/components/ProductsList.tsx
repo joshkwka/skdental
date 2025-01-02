@@ -3,17 +3,14 @@ import Image from "next/image";
 
 const ProductsList = () => {
   const [expandedSection, setExpandedSection] = useState<string | null>("Crown & Bridge");
-  const [pendingSection, setPendingSection] = useState<string | null>(null);
 
   const toggleSection = (section: string) => {
     if (expandedSection === section) {
       setExpandedSection(null); 
     } else {
-      setPendingSection(section);
       setExpandedSection(null); 
       setTimeout(() => {
         setExpandedSection(section);
-        setPendingSection(null);
       }, 300); 
     }
   };
