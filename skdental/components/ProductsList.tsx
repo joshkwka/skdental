@@ -44,6 +44,7 @@ const ProductsList = () => {
               className={`ml-2 h-5 w-5 text-gray-500 transform transition-transform ${
                 expandedSection === "Crown & Bridge" ? "rotate-180" : ""
               }`}
+              onClick={() => toggleSection("Crown & Bridge")}
             />
           </h3>
           <div className="flex flex-col">
@@ -106,6 +107,7 @@ const ProductsList = () => {
               className={`ml-2 h-5 w-5 text-gray-500 transform transition-transform ${
                 expandedSection === "Implants" ? "rotate-180" : ""
               }`}
+              onClick={() => toggleSection("Implants")}
             />
           </h3>
           <div className="flex flex-col">
@@ -156,6 +158,7 @@ const ProductsList = () => {
               className={`ml-2 h-5 w-5 text-gray-500 transform transition-transform ${
                 expandedSection === "Night Guard" ? "rotate-180" : ""
               }`}
+              onClick={() => toggleSection("Night Guard")}
             />
           </h3>
           <div className="flex flex-col">
