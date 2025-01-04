@@ -1,19 +1,12 @@
 import React, { useState } from "react";
 import Image from "next/image";
-import { ChevronDownIcon } from '@heroicons/react/20/solid';
+import { ChevronDownIcon } from "@heroicons/react/20/solid";
 
 const ProductsList = () => {
   const [expandedSection, setExpandedSection] = useState<string | null>("Crown & Bridge");
 
   const toggleSection = (section: string) => {
-    if (expandedSection === section) {
-      setExpandedSection(null);
-    } else {
-      setExpandedSection(null);
-      setTimeout(() => {
-        setExpandedSection(section);
-      }, 300);
-    }
+    setExpandedSection(expandedSection === section ? null : section);
   };
 
   return (
@@ -35,42 +28,35 @@ const ProductsList = () => {
       {/* Crown & Bridge */}
       <div className="ml-0 lg:ml-20 mb-6 flex flex-wrap">
         <div className="w-full md:w-1/2 flex flex-col items-start mb-6">
-          <h3
-            className="text-xl font-semibold cursor-pointer text-gray-700 hover:text-blue-500 transition-colors mb-4 flex items-center justify-between"
+          <div
+            className="w-full flex items-center justify-between cursor-pointer py-4 px-2 rounded-lg bg-[var(--tab-background)] hover:bg-[var(--tab-background-hover)] transition-colors"
             onClick={() => toggleSection("Crown & Bridge")}
           >
-            Crown & Bridge
+            <h3 className="text-xl font-semibold text-gray-700">Crown & Bridge</h3>
             <ChevronDownIcon
-              className={`ml-2 h-5 w-5 text-gray-500 transform transition-transform ${
+              className={`h-6 w-6 text-gray-500 transform transition-transform ${
                 expandedSection === "Crown & Bridge" ? "rotate-180" : ""
               }`}
-              onClick={() => toggleSection("Crown & Bridge")}
             />
-          </h3>
+          </div>
           <div className="flex flex-col">
             <div
               className={`transition-all duration-300 ease-in-out overflow-hidden ${
-                expandedSection === "Crown & Bridge"
-                  ? "max-h-screen opacity-100"
-                  : "max-h-0 opacity-0"
+                expandedSection === "Crown & Bridge" ? "max-h-screen opacity-100" : "max-h-0 opacity-0"
               }`}
             >
               <ul className="mt-2 space-y-2 text-gray-600">
                 <li>
-                  <strong>IPS e.max:</strong> Aesthetic, durable ceramic ideal
-                  for anterior and posterior restorations.
+                  <strong>IPS e.max:</strong> Aesthetic, durable ceramic ideal for anterior and posterior restorations.
                 </li>
                 <li>
-                  <strong>Full Cast:</strong> High-strength metal crowns
-                  offering durability for posterior teeth.
+                  <strong>Full Cast:</strong> High-strength metal crowns offering durability for posterior teeth.
                 </li>
                 <li>
-                  <strong>Zirconia:</strong> Strong, biocompatible ceramic with
-                  excellent aesthetics for anterior and posterior teeth.
+                  <strong>Zirconia:</strong> Strong, biocompatible ceramic with excellent aesthetics for anterior and posterior teeth.
                 </li>
                 <li>
-                  <strong>PFM (Porcelain-Fused-to-Metal):</strong> Combines
-                  strength and aesthetics with a metal substructure.
+                  <strong>PFM (Porcelain-Fused-to-Metal):</strong> Combines strength and aesthetics with a metal substructure.
                 </li>
               </ul>
             </div>
@@ -98,31 +84,26 @@ const ProductsList = () => {
       {/* Implants */}
       <div className="ml-0 lg:ml-20 mb-6 flex flex-wrap">
         <div className="w-full md:w-1/2 flex flex-col items-start mb-6">
-          <h3
-            className="text-xl font-semibold cursor-pointer text-gray-700 hover:text-blue-500 transition-colors mb-4 flex items-center justify-between"
+          <div
+            className="w-full flex items-center justify-between cursor-pointer py-4 px-2 rounded-lg bg-[var(--tab-background)] hover:bg-[var(--tab-background-hover)] transition-colors"
             onClick={() => toggleSection("Implants")}
           >
-            Implants
+            <h3 className="text-xl font-semibold text-gray-700">Implants</h3>
             <ChevronDownIcon
-              className={`ml-2 h-5 w-5 text-gray-500 transform transition-transform ${
+              className={`h-6 w-6 text-gray-500 transform transition-transform ${
                 expandedSection === "Implants" ? "rotate-180" : ""
               }`}
-              onClick={() => toggleSection("Implants")}
             />
-          </h3>
+          </div>
           <div className="flex flex-col">
             <div
               className={`transition-all duration-300 ease-in-out overflow-hidden ${
-                expandedSection === "Implants"
-                  ? "max-h-screen opacity-100"
-                  : "max-h-0 opacity-0"
+                expandedSection === "Implants" ? "max-h-screen opacity-100" : "max-h-0 opacity-0"
               }`}
             >
               <p className="mt-2 text-gray-600">
-                SK Dental offers precision-crafted implants compatible with a
-                wide range of systems. These implants are designed for optimal
-                osseointegration and durability, ensuring long-lasting
-                performance.
+                SK Dental offers precision-crafted implants compatible with a wide range of systems. These implants are
+                designed for optimal osseointegration and durability, ensuring long-lasting performance.
               </p>
             </div>
           </div>
@@ -149,31 +130,26 @@ const ProductsList = () => {
       {/* Night Guard */}
       <div className="ml-0 lg:ml-20 mb-6 flex flex-wrap">
         <div className="w-full md:w-1/2 flex flex-col items-start mb-6">
-          <h3
-            className="text-xl font-semibold cursor-pointer text-gray-700 hover:text-blue-500 transition-colors mb-4 flex items-center justify-between"
+          <div
+            className="w-full flex items-center justify-between cursor-pointer py-4 px-2 rounded-lg bg-[var(--tab-background)] hover:bg-[var(--tab-background-hover)] transition-colors"
             onClick={() => toggleSection("Night Guard")}
           >
-            Night Guard
+            <h3 className="text-xl font-semibold text-gray-700">Night Guard</h3>
             <ChevronDownIcon
-              className={`ml-2 h-5 w-5 text-gray-500 transform transition-transform ${
+              className={`h-6 w-6 text-gray-500 transform transition-transform ${
                 expandedSection === "Night Guard" ? "rotate-180" : ""
               }`}
-              onClick={() => toggleSection("Night Guard")}
             />
-          </h3>
+          </div>
           <div className="flex flex-col">
             <div
               className={`transition-all duration-300 ease-in-out overflow-hidden ${
-                expandedSection === "Night Guard"
-                  ? "max-h-screen opacity-100"
-                  : "max-h-0 opacity-0"
+                expandedSection === "Night Guard" ? "max-h-screen opacity-100" : "max-h-0 opacity-0"
               }`}
             >
               <p className="mt-2 text-gray-600">
-                Our custom-fitted night guards provide effective protection
-                against bruxism (teeth grinding) and ensure comfort during use.
-                Available in soft, hard, and hybrid materials to suit individual
-                needs.
+                Our custom-fitted night guards provide effective protection against bruxism (teeth grinding) and ensure
+                comfort during use. Available in soft, hard, and hybrid materials to suit individual needs.
               </p>
             </div>
           </div>

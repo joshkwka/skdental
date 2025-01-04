@@ -20,6 +20,8 @@
   --project-background: #fbfbfb; 
   --text-light: #e0e0e0; 
   --text-dark: #3c4043;
+  --tab-background: #ebebebc5;
+  --tab-background-hover: #e2e2e2c5;
 }
 
 body {
