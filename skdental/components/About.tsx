@@ -24,7 +24,7 @@ const About = () => {
           Cosmetic Dental Laboratory
         </h2>
         <p className="text-md max-w-lg min-w-[250px] py-1 mx-auto">
-          At SK Dental Ceramic Studio, we specialize in crafting high-quality cosmetic dental appliances with over 30 
+          At S K Dental Ceramic Studio, we specialize in crafting high-quality cosmetic dental appliances with over 30 
           years of expertise. Our services include E-max, zirconia, porcelain, and metal crowns and bridges, implant 
           restorations, and custom night guards. Using advanced digital design, we deliver precision and excellence 
           to help create confident, radiant smiles.
