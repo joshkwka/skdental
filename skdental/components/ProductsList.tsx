@@ -149,7 +149,7 @@ const ProductsList = () => {
             >
               <p className="mt-2 text-gray-600">
                 Our custom-fitted night guards provide effective protection against bruxism (teeth grinding) and ensure
-                comfort during use. Available in soft, hard, and hybrid materials to suit individual needs.
+                comfort during use. 
               </p>
             </div>
           </div>
